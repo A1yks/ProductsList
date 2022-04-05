@@ -3,10 +3,11 @@ import { StyleSheet, View } from 'react-native';
 import ProductCategories from './ProductCategories';
 import ProductList from './ProductList';
 
-const Home: FC = () => {
+const HomeLayout: FC = (props) => {
 	return (
 		<View style={styles.container}>
 			<ProductCategories style={styles.categories} />
+			{props.children}
 			<ProductList style={styles.list} />
 		</View>
 	);
@@ -26,4 +27,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default Home;
+export default HomeLayout;

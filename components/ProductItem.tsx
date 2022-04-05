@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { View, Image, StyleSheet, Text, ViewStyle } from 'react-native';
 import formatPrice from '../utils/formatPrice';
 import getTextPart from '../utils/getTextPart';
-import { ProductInfo } from './ProductList';
+import { ProductInfo } from '../context/AppContext';
 
 type Props = {
 	product: ProductInfo;

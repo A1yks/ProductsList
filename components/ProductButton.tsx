@@ -9,8 +9,6 @@ type Props = {
 };
 
 const ProductButton: FC<Props> = (props) => {
-	// return <Button onPress={props.onPress} title={props.title} />;
-
 	return (
 		<TouchableNativeFeedback onPress={props.onPress}>
 			<View style={[styles.button, props.active && styles.activeView, props.style]}>
