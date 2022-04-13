@@ -1,5 +1,5 @@
 import { FC, memo } from 'react';
-import { ActivityIndicator, ScrollView, StyleSheet, View, ViewStyle } from 'react-native';
+import { ActivityIndicator, ScrollView, StyleSheet, View, ViewStyle, Text } from 'react-native';
 import { useAppContext } from '../context/AppContext';
 
 import ProductItem from './ProductItem';
@@ -15,6 +15,13 @@ const ProductList: FC<Props> = (props) => {
 		return (
 			<View style={styles.spinnerWrapper}>
 				<ActivityIndicator color="#3080ed" size="large" />
+			</View>
+		);
+
+	if (foundProducts.length === 0)
+		return (
+			<View style={styles.notFoundWrapper}>
+				<Text style={styles.notFoundText}>Products not found</Text>
 			</View>
 		);
 
@@ -39,6 +46,15 @@ const styles = StyleSheet.create({
 	},
 	indent: {
 		marginTop: 20,
+	},
+	notFoundWrapper: {
+		flex: 1,
+		alignSelf: 'stretch',
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	notFoundText: {
+		fontSize: 18,
 	},
 });
 

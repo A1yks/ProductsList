@@ -1,4 +1,4 @@
-import { FC, useCallback, useState } from 'react';
+import { FC, useCallback } from 'react';
 import { StyleSheet, View, ViewStyle } from 'react-native';
 import { Categories, useAppContext } from '../context/AppContext';
 import ProductButton from './ProductButton';

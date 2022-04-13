@@ -12,6 +12,13 @@
 				"allowUndefined": true,
 				"verbose": false
 			}
-		]
+		],
+		[
+			"module-resolver",
+			{
+				"extensions": [".tsx", ".ts", ".js", ".json"]
+			}
+		],
+		"react-native-reanimated/plugin"
 	]
 }

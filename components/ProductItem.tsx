@@ -10,6 +10,8 @@ type Props = {
 };
 
 const ProductItem: FC<Props> = (props) => {
+	console.log('render 223');
+
 	return (
 		<View style={[styles.container, props.style]}>
 			<View>
@@ -17,7 +19,7 @@ const ProductItem: FC<Props> = (props) => {
 			</View>
 			<View style={styles.productInfo}>
 				<Text style={styles.text}>{getTextPart(props.product.title)}</Text>
-				<Text style={styles.description}>{getTextPart(props.product.description, 2)}</Text>
+				<Text style={styles.description}>{getTextPart(props.product.description)}</Text>
 			</View>
 			<Text style={[styles.price, styles.text]}>{formatPrice(props.product.price)} $</Text>
 		</View>

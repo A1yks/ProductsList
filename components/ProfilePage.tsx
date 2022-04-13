@@ -19,6 +19,8 @@ const styles = StyleSheet.create({
 	container: {
 		alignItems: 'center',
 		paddingTop: 35,
+		backgroundColor: '#fff',
+		flex: 1,
 	},
 	imageWrapper: {
 		width: 100,

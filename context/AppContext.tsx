@@ -61,6 +61,7 @@ export const AppContextProvider: FC = (props) => {
 				setProducts(data);
 			} catch (err) {
 				Alert.alert('Error', 'No internet connection');
+				setProducts([]);
 			} finally {
 				setProductsLoading(false);
 			}

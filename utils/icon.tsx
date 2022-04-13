@@ -3,7 +3,7 @@ import Ionicon from 'react-native-vector-icons/Ionicons';
 type IconProps = {
 	color: string;
 	size: number;
-	focused: boolean;
+	focused?: boolean;
 };
 
 function icon(iconName: string) {
